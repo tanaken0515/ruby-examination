@@ -26,7 +26,7 @@ end
 p '---3行目---------------------'
 begin
   [1, 2, 3].inject([]) {|x, y|
-    # print sprintf("%d + %d ** 2 = ", x, y)
+    print sprintf("%s << %d ** 2 = ", x.to_s, y)
     p x << y ** 2
   }
 rescue
